@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>EQUIPOS DE FUTBOOL</h1>
+    <div id="puntos"></div>
+</body>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    //var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    //var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+
+    saltarLinea();
+    var numeropensado = Math.round(Math.random() * (10));
+    var numerolanzado = parseInt(prompt("Ingrese u numero entre 0-10"));
+    var agregar = document.getElementById("puntos");
+    if (numerolanzado == numeropensado) {
+        agregar.innerHTML = "<h3>Felicidades has gando el juego</h3"
+    } else {
+        agregar.innerHTML = "<h3>No has ganodo, buel ve a internterlo</h3>"
+    }
+</script>
+
+
+</html>
