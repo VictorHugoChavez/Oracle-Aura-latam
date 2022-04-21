@@ -1,0 +1,23 @@
+p {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: #cccccc;
+}
+
+em strong {
+    color: red;
+}
+
+.mision {
+    font-size: 20px;
+}
+
+.banner {
+    width: 100%;
+}
