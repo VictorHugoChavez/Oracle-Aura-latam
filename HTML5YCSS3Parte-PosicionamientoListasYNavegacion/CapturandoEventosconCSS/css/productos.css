@@ -1,0 +1,86 @@
+header {
+    background-color: #BBBBBB;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.caja {
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.products {
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.products li {
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    /*     border-color: #000000;
+    border-width: 2px;
+    border-style:solid; */
+    border-radius: 10px;
+}
+
+.products li:hover {
+    border-color: #c78c19;
+}
+
+.products li:active {
+    border-color: green;
+}
+
+.products h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.producto-precio {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.products li:hover h2 {
+    font-size: 33px;
+}
+
+
+/* 
+hover, cuando el usuario pasa el cursor sobre el elemento.
+active, cuando un elemento está siendo activado por el usuario.
+*/
+
+
+/* .producto-descripcion {} */
