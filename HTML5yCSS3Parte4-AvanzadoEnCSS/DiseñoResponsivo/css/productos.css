@@ -205,6 +205,13 @@ active, cuando un elemento está siendo activado por el usuario.
 
 .imagen {
     width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000;
+}
+
+.imagen-diferenciales:hover {
+    opacity: 0.3;
+    transition: 400ms;
 }
 
 .mapa {
@@ -276,3 +283,23 @@ img+p {
 
 }
 */
+
+@media screen and (max-width:480px) {
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    .caja,
+    .principal,
+    .mapa-contenido,
+    .contenido-diferenciales,
+    .video {
+        width: auto
+    }
+    .lista-diferenciales,
+    .imagen {
+        width: 100%;
+    }
+}
