@@ -24,3 +24,20 @@ let isBoleans=false;
 console.log(!isBoleans);
 
 
+console.log("OPERACIONES ARITMETICAS")
+const numero1=10;
+const numero2=2.4;
+
+let sumaNumeros=0;
+
+sumaNumeros=10+10;
+console.log(sumaNumeros);
+sumaNumeros=164+11;
+console.log(sumaNumeros);
+sumaNumeros=12+5;
+console.log(sumaNumeros);
+
+
+console.log("4"+"43");
+console.log(parseInt("4")+parseInt("43"));
+
