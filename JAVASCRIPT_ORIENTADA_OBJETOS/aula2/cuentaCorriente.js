@@ -11,17 +11,17 @@ export class CuentaCorriente {
 
     depositoEnCuenta(valor) {
         if (valor > 0)
-            this.#saldo += valor;
-        return this.#saldo;
+            this.saldo += valor;
+        return this.saldo;
     }
 
     retirarDeCuenta(valor) {
-        if (valor <= this.#saldo)
-            this.#saldo -= valor;
-        return this.#saldo;
+        if (valor <= this.saldo)
+            this.saldo -= valor;
+        return this.saldo;
     }
 
     verSaldo() {
-        return this.#saldo;
+        return this.saldo;
     }
 }

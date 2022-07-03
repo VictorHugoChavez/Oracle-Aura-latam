@@ -1,4 +1,6 @@
-import { CuentaCorriente } from './aula2/cuentaCorriente.js';
+import { CuentaCorriente } from '../JAVASCRIPT_ORIENTADA_OBJETOS/aula2/cuentaCorriente.js';
+import { cliente } from '../JAVASCRIPT_ORIENTADA_OBJETOS/aula2/cliente.js';
+
 
 const cuentaDeLeonardo = new CuentaCorriente();
 //cuentaDeLeonardo.#saldo = 10;
