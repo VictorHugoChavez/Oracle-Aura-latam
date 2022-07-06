@@ -4,7 +4,18 @@ console.log(btn);
 const accion = (evento) => {
     evento.preventDefault();
     const input = document.querySelector("[data-form-input]");
-    console.log(input.value);
+    const value = input.value;
+    const list = document.querySelector("[data-list]");
+    const task = document.createElement('li');
+    task.classList.add("card");
+    const info = ` <div id="etiqueta">
+                    <i class="far fa-check-square icon"></i>
+                    <span class="task">${value}</span>
+                </div>
+                <i class="fas fa-trash-alt trashIcon icon"></i>`;
+    console.log(info)
+    input.value = "";
+    task.innerHTML = info;
+    list.appendChild(task)
 }
-
 btn.addEventListener("click", accion);
