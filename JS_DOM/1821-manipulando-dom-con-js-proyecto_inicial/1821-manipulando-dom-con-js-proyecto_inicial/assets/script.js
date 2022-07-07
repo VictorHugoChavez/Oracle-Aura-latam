@@ -8,14 +8,26 @@ const accion = (evento) => {
     const list = document.querySelector("[data-list]");
     const task = document.createElement('li');
     task.classList.add("card");
-    const info = ` <div id="etiqueta">
-                    <i class="far fa-check-square icon"></i>
-                    <span class="task">${value}</span>
-                </div>
+    const taskContet = document.createElement('div');
+    taskContet.appendChild(chechkComplete());
+    const tittleTask = document.createElement("span");
+    tittleTask.classList.add("task");
+    tittleTask.innerText = value;
+    taskContet.appendChild(tittleTask);
+    const info = ` 
                 <i class="fas fa-trash-alt trashIcon icon"></i>`;
     console.log(info)
     input.value = "";
-    task.innerHTML = info;
+    task.appendChild(taskContet)
     list.appendChild(task)
 }
 btn.addEventListener("click", accion);
+
+const chechkComplete = () => {
+    const i = document.createElement('i');
+    i.classList.add("far");
+    i.classList.add("fa-check-square");
+    i.classList.add("icon");
+
+    return i;
+}
